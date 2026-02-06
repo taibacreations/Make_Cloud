@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Archivo_Black, Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/global/ThemeProvider";
@@ -19,6 +19,16 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
 	subsets: ["latin"],
+});
+const roboto = Roboto({
+	variable: "--font-roboto",
+	subsets: ["latin"],
+	weight: ["400","500","600","700","900"]
+});
+const archivo_black = Archivo_Black({
+	variable: "--font-archivo-black",
+	subsets: ["latin"],
+	weight: ["400"]
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -41,7 +51,7 @@ export default async function RootLayout({
 				<GoogleAnalytics />
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${archivo_black.variable} ${roboto.variable} antialiased`}
 				>
 				<PostHogProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>

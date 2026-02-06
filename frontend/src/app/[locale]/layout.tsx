@@ -1,6 +1,3 @@
-// app/[locale]/layout.tsx
-import Header from '@/components/global/Header';
-import Footer from '@/components/global/Footer';
 import { CookieConsent } from '@/components/global/CookieConsent';
 import { client } from '@/sanity/client';
 import type { Footer as SanityFooter, Header as SanityHeader } from '@/sanity/types';
@@ -46,9 +43,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <LanguageProvider locale={locale}>
-      {header && <Header {...header} locale={locale} dictionary={dictionary} />}
-      <div className="mt-20">{children}</div>
-      {footer && <Footer {...footer} dictionary={dictionary.footer} />}
+      <div className="">{children}</div>
       <CookieConsent dictionary={dictionary.cookie} />
     </LanguageProvider>
   );
