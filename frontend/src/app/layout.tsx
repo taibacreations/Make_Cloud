@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Geist, Geist_Mono, Roboto } from "next/font/google";
+import { Archivo_Black, DM_Sans, Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/global/ThemeProvider";
@@ -30,6 +30,11 @@ const archivo_black = Archivo_Black({
 	subsets: ["latin"],
 	weight: ["400"]
 });
+const dm_sans = DM_Sans({
+	variable: "--font-dm-sans",
+	subsets: ["latin"],
+	weight: ["400","500"]
+});
 
 export async function generateMetadata(): Promise<Metadata> {
 	const dictionary = await getDictionary(i18n.defaultLocale);
@@ -51,7 +56,7 @@ export default async function RootLayout({
 				<GoogleAnalytics />
 			</head>
 			<body
-				className={`${archivo_black.variable} ${roboto.variable} antialiased`}
+				className={`${archivo_black.variable} ${roboto.variable} ${dm_sans.variable} antialiased`}
 				>
 				<PostHogProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>

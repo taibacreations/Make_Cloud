@@ -6,7 +6,7 @@ const PartnersSection = () => {
         <section className='bg-[#F7F9FC] h-[617px] px-4 xl:px-10'>
             <div className='max-w-[1480px] mx-auto pt-[12vh] pb-[13vh]'>
                 <div className='w-[633px] mx-auto'>
-                    <h2>Multi Cloud Certified Strategic Partners</h2>
+                    <h2 className='font-normal font-archivo-black text-center'>Multi Cloud Certified Strategic Partners</h2>
                 </div>
                 <div className='flex justify-center items-center gap-6 mt-[4.5vh]'>
                     <div className='w-[452px] h-[247px] bg-[url(/partners-bg.png)] bg-cover bg-center rounded-[30px] relative'>

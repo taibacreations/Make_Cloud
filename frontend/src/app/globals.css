@@ -115,6 +115,7 @@
 @theme inline {
   --font-roboto: var(--font-roboto);
   --font-archivo-black: var(--font-archivo-black);
+  --font-dm-sans: var(--font-dm-sans);
 }
 
 @layer base {
@@ -128,6 +129,7 @@
 
 body {
   background-color: white;
+  overflow-x: hidden;
 }
 
 .links {
@@ -141,17 +143,23 @@ header, .hero {
 }
 
 h2 {
-  font-family: roboto !important;
-  font-size: 55px;
+  /* font-family: archivo-black !important; */
+  font-size: 45px;
   line-height: 100%;
   color: black;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
+}
+.h2 {
+  /* font-family: archivo-black !important; */
+  font-size: 45px;
+  line-height: 100%;
+  color: white !important;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 .services {
-  font-family: roboto;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 900;
   line-height: 100%;
   text-transform: uppercase;
@@ -174,4 +182,20 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navigation {
+  background-color: #345CA7 !important;
+}
+.navigation:hover {
+  background-color: #E53023 !important;
+  cursor: pointer;
+}
+input, textarea {
+  border: 1px solid #DADEE7;
+  border-radius: 184px;
+  background-color: white;
+}
+textarea {
+  border-radius: 10px !important;
 }
