@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Archivo_Black, DM_Sans, Geist, Geist_Mono, Roboto } from "next/font/google";
+import { Archivo_Black, DM_Sans, Roboto } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/global/ThemeProvider";
-import { ThemeToggle } from "@/components/global/ThemeToggle";
 import { GoogleAnalytics } from "@/components/global/GoogleAnalytics";
 import { getDictionary } from "@/i18n/getDictionary";
 import { i18n } from "@/i18n/i18n-config";

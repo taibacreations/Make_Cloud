@@ -19,7 +19,7 @@ const ContactsSection = () => {
                         {/* Content */}
                         <div className='relative z-10 w-[611px]'>
                             <h2 className='font-normal h2 leading-[100%] font-archivo-black mb-6'>
-                                LET'S START YOUR<br />CLOUD JOURNEY
+                                LET`S START YOUR<br />CLOUD JOURNEY
                             </h2>
 
                             <p className='font-roboto font-normal text-white leading-[100%] mb-9 text-[18px]'>

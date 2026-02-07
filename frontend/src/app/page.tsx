@@ -1,5 +1,4 @@
 import BlogsSection from '@/components/sections/BlogsSection'
-import Branding from '@/components/sections/branding'
 import ChooseSection from '@/components/sections/ChooseSection'
 import ContactsSection from '@/components/sections/ContactsSection'
 import FeaturesSection from '@/components/sections/FeaturesSection'

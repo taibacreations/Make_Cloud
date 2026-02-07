@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import HeroSection from "./HeroSection";
 import CasesSection from "./CasesSection";
 import TestimonialsSection from "./TestimonialsSection";
 import PricingSection from "./PricingSection";
@@ -51,8 +50,6 @@ export default function RenderSection({ section }: RenderSectionProps) {
 
 	// Use discriminated union pattern with _type property to determine which component to render
 	switch (section._type) {
-		case "heroSection":
-			return <HeroSection {...section} />;
 		case "casesSection":
 			return <CasesSection {...section} />;
 		case "testimonialsSection":
