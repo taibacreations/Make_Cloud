@@ -58,7 +58,7 @@ const FooterSection = ({ footerData }: FooterSectionProps) => {
       if (response.ok) {
         setSubmitStatus('success')
         setEmail('')
-        
+
         // Clear success message after 5 seconds
         setTimeout(() => {
           setSubmitStatus('idle')
